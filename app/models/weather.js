@@ -26,6 +26,9 @@ export default class Weather {
     return /*html*/`
       <h2> <i class="fas fa-thermometer-three-quarters"></i>: ${ this.wantFerinhight ? this.ferinhight : this.celcius}</h2>
       ${this.wind ? `<h3>\uD83C\uDF2C:${this.windDir}@ ${this.wind}m/s${this.gust ? `, gusts to ${this.gust}m/s` : ``} </h3>` : ``}
+      <p>🌄: ${this.sunrise.toLocaleTimeString()}</p>
+      <p>🌇: ${this.sunset.toLocaleTimeString()}</p>
+
     `
 
   }
