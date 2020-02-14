@@ -25,9 +25,7 @@ export default class Weather {
   get Template() {
     return /*html*/`
       <h2> <i class="fas fa-thermometer-three-quarters"></i>: ${ this.wantFerinhight ? this.ferinhight : this.celcius}</h2>
-        <h3>\uD83C\uDF2C:${this.windDir}@ ${this.wind}m/s, gusts to ${this.gust}m/s</h5>
-
-
+      ${this.wind ? `<h3>\uD83C\uDF2C:${this.windDir}@ ${this.wind}m/s${this.gust ? `, gusts to ${this.gust}m/s` : ``} </h3>` : ``}
     `
 
   }
