@@ -6,7 +6,10 @@ let _state = {
   /**@type {Todo[]}*/
   todos: [],
   /**@type {{ url: string, site: string }}} */
-  image: undefined
+  image: undefined,
+  /**@type {{url: string, author:string, quote:string}} */
+  quote: undefined
+
 };
 
 /** Collection of listeners to be called based on keyed state changes
@@ -15,7 +18,8 @@ let _state = {
 let _listeners = {
   weather: [],
   todos: [],
-  image: []
+  image: [],
+  quote: []
 };
 
 /**
