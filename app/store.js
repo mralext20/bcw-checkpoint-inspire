@@ -2,7 +2,7 @@ import Weather from "./models/weather.js";
 
 let _state = {
   /**@type {Weather} */
-  weather: new Weather({ name: "loading", main: { temp: 0.0 } }), //temporary fake data
+  weather: undefined, //temporary fake data
   /**@type {Todo[]}*/
   todos: [],
   /**@type {{ url: string, site: string }}} */
