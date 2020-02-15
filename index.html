@@ -25,10 +25,16 @@
 	</a>
 	<div id="image-source"></div>
 	<div>
-		A Todo List
-		<div id="todo-error"></div>
-		<form onsubmit=""></form>
-		<div id="todos"></div>
+		A Todo List with <span id="todo-count"></span> items
+		<form onsubmit="app.todoController.addTodo(event)">
+			<div class="form-group">
+				<label for="note">New Todo
+				</label>
+				<input type="text" class="form-control" name="note" id="note">
+			</div>
+			<button type="submit" class="btn btn-primary">create</button>
+		</form>
+		<div id="todotarget"></div>
 	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>

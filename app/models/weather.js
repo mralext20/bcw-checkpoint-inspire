@@ -13,7 +13,7 @@ export default class Weather {
     this.celcius = (this.kelvin - 273.15)
     // (0°C × 9/5) + 32 = 32°F
     this.ferinhight = `${((this.celcius * 9 / 5) + 32).toFixed(2)} °F`
-    this.celcius = `${this.celcius.toFixed(2)}°F`
+    this.celcius = `${this.celcius.toFixed(2)}°C`
     this.wind = data.wind.speed
     this.windDir = data.wind.deg
     this.gust = data.wind.gust
