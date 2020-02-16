@@ -6,9 +6,9 @@ import store from "../store.js";
 
 function _draw() {
   let quote = store.State.quote
-  document.getElementById("quote").innerText = quote.quote
+  document.getElementById("quote-text").innerText = quote.quote
   document.getElementById("quote-author").innerText = quote.author
-  document.getElementById("quote-wrapper").href = quote.url
+  document.getElementById("quote-link").href = quote.url
 }
 export default class QuoteController {
   constructor() {
