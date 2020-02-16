@@ -12,19 +12,28 @@
 </head>
 
 <body>
-	<div id="weather">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-6" id="quote">
+
+
+				<a id="quote-wrapper text-center">
+
+					<div id="quote">
+
+					</div>
+					<div id="quote-author">
+
+					</div>
+
+				</a>
+			</div>
+
+
+		</div>
 	</div>
-	<a id="quote-wrapper">
 
-		<div id="quote">
-
-		</div>
-		<div id="quote-author">
-
-		</div>
-	</a>
-	<div id="">image Credit: <span id="image-source"></span></div>
-	<div>
+	<div id='todolist'>
 		A Todo List with <span id="todo-count"></span> items
 		<form onsubmit="app.todoController.addTodo(event)">
 			<div class="form-group">
@@ -36,7 +45,9 @@
 		</form>
 		<div id="todotarget"></div>
 	</div>
-
+	<div id="weather">
+	</div>
+	<div id="image-credit">image Credit: <span id="image-source"></span></div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
 	<script type="module" src="app/main.js"></script>
 </body>
