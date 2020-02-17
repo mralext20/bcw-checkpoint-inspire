@@ -11,7 +11,7 @@ class ImageService {
   fetchPicture() {
     imgApi.get().then(res => {
       let data = res.data
-      store.commit("image", { url: data.url, site: data.site })
+      store.commit("image", { url: data.large_url || data.url, site: data.site })
     }).catch(err => console.error(err));
   }
 }
